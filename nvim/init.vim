@@ -7,6 +7,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox' 
+Plug 'artanikin/vim-synthwave84'
 
 " Syntax highlight:
 Plug 'sheerun/vim-polyglot'
@@ -20,10 +21,14 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 "Colorscheme
-autocmd vimenter * ++nested colorscheme gruvbox
-"colorscheme gruvbox
+autocmd vimenter * ++nested colorscheme synthwave84
+
+"termgui colors for colorscheme
+set termguicolors
 
 "Hybrid line numbers:
 :set number relativenumber
+
+
 
 
